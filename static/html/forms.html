@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!-- <link rel="stylesheet" href="html_style.css"> -->
+        <title>AwesomeCo Blog</title>
+    </head>
+    <body>
+        <form method="post" action="/projects/1">
+            <fieldset id="personal_information">
+                <legend>프로젝트 정보</legend>
+                <ol>
+                    <li>
+                        <label for="name">이름</label>
+                        <input type="text" name="name" autofocus id="name">
+                    </li>
+                    <li>
+                        <label for="priority">중요도</label>
+                        <input type="range" min="0" max="10" name="priority" value="0" id="priority">
+                    </li>
+                    <li>
+                        <label for="estimated_hours">예상 시간</label>
+                        <input type="number" name="estimated_hours" min="0" max="1000" id="estimated_hours">
+                    </li>        
+                    <li>
+                        <label for="start_date">시작 날짜</label>
+                        <input type="date" name="start_date" id="start_date" value="2010-12-01">
+                    </li>        
+                    <li>
+                        <label for="email">이메일 연락처</label>
+                        <input type="email" name="email" id="email">
+                    </li>
+                    <li>
+                        <label for="url">테스트 URL</label>
+                        <input type="url" name="url" id="url">
+                    </li>
+        
+                    <li>
+                        <label for="project_color">프로젝트 색상</label>
+                        <input type="color" name="project_color" id="project_color">
+                    </li>
+                    <li>
+                        <input type="submit" value="Submit">
+                    </li>
+                </ol>
+            </fieldset>
+        </form>
+    </body>
+</html>
